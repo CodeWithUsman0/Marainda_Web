@@ -1,0 +1,256 @@
+@font-face {
+    font-family: domain;
+    src: url(./5f242a69b1577e63266b4d72_DomaineDispCondMedium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:gilroy;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    position: relative;
+    overflow-x: hidden;
+    background-color: #222;
+}
+#page1{
+    min-height: 100vh;
+    position: relative;
+    width: 100vw;
+    background-color: #C4BCB2;
+}
+
+#nav{
+    height: 80px;
+    width: 100vw;
+    border-bottom: 1.5px solid #555;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+#nav h5{
+    font-family: serif;
+    font-size: 12px;
+    font-weight: 200;
+    width: 30%;
+
+}
+#nav img{
+    height: 20px;
+    width: 30%;
+}
+#nav i{
+    width: 30%;
+    font-size: 20px;
+    text-align: right;
+}
+
+#elems{
+    height: 230px;
+    margin-top: 40px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#elems #elem1{
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+    padding: 30px 40px;
+
+}
+#elems #elem2{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 30px 40px;
+    text-align: center;
+    border-left: 1px solid #555;
+    border-right: 1px solid #555;
+
+}
+#elems #elem2 h1{
+    font-family: canopee;
+    font-size: 50px;
+}
+#elems #elem2 h2{
+    font-size: 30px;
+    font-family: serif;
+    text-transform: capitalize;
+    font-weight: 100;
+    line-height: 30px;
+    margin-top: 20px;
+}
+#elems #elem2 h5{
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+#elem1 img{
+    height: 140px;
+    border: 1px solid #555;
+    width: 100%;
+    margin-bottom: 10px;
+}
+#elem1 h3{
+    font-family: canopee;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+#elem1 p{
+    font-size: 14px;
+}
+
+#page1>h1{
+    font-size: 410px;
+    margin-top: 50px;
+    color: #C4BCB2;
+    background-color: #222;
+    font-family: canopee;
+    margin-left: 30px;
+    width: 94%;
+    text-align: center;
+    line-height: 350px;
+}
+
+#page2{
+    min-height: 100vh;
+    display: flex;
+    background-color: #C4BCB2;
+}
+#page2-left{    
+    width:35%;
+    padding: 40px;
+}
+#page2-left img{
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+
+}
+#page2-left h1{
+    font-size: 90px;
+    line-height: 90px;
+    color: #222;
+    font-family: canopee;
+    text-transform: uppercase;
+
+}
+#page2-left h2{
+    font-size:30px;
+    line-height: 30px;
+    font-weight: 200;
+    color: #222;
+    font-family: domain;
+}
+#page2-right{ 
+    border-left: 1px solid #555;   
+    padding: 40px;
+    width:65%;
+
+}
+#page2-right img{    
+    height: 560px;
+    width: 100%;
+    object-fit: cover;
+
+}
+#page2-right h1{
+    font-size: 95px;
+    line-height: 90px;
+    color: #222;
+    font-family: canopee;
+    text-transform: uppercase;
+}
+
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #C4BCB2;
+    position: relative;
+    padding: 30px;
+}
+#page3-elems>h1 {
+    font-size: 360px;
+    color: #C4BCB2;
+    background-color: #222;
+    font-family: canopee;
+    display: inline-block;
+    width: 74%;
+    text-align: center;
+    letter-spacing: -10px;
+    line-height: 290px;
+    margin-top: -20px;
+    font-weight: 100;
+}
+
+#page3-elems img{
+    height: 330px;
+    margin-left: 50px;
+}
+#page3-elems{
+    display: flex;
+    align-items: center;
+}
+
+#page3 #elems{
+    height: 230px;
+    margin-top: 40px;
+    width: 100vw;
+    margin-left: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer{
+    padding: 30px 40px;
+    background-color: #C4BCB2;
+    border-top: 1px solid #555;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+
+}
+#footer::-webkit-scrollbar{
+    display: none;
+}
+#footer h1{
+    font-family: domain;
+    font-weight: 100;
+    font-size: 80px;
+    display: inline-block;
+    color: #222;
+    margin-right: 10px; 
+    animation-name: move;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#footer:hover h1{
+    animation-play-state: paused;
+}
+#footer h1 span{
+    font-family: domain;
+    color: #C4BCB2;
+    background-color: #222;
+    padding: 0 5px;
+    font-weight: 100;
+}
+
+@keyframes move {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-100% - 14px));
+    }
+}
